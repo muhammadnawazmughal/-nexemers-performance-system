@@ -64,6 +64,15 @@ Password: DemoAdmin123!
 
 Do not use demo credentials in a shared or production environment. Change or remove the demo account before deployment.
 
+To create a separate demo employee account limited to its own performance view:
+
+```cmd
+cd server
+npm run seed-demo-employee -- demo.employee@nexemers.local "choose-a-long-password"
+```
+
+Use a password of at least 12 characters. The demo employee is assigned the `employee` role and has no access to management pages.
+
 ## Verification
 
 ```cmd
